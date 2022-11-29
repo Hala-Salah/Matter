@@ -1,0 +1,22 @@
+.LightNavBar {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navBarHr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #FF5E1B, rgba(0, 0, 0, 0));
+}
+.loginLink{
+    text-decoration: none;
+        color:#33333A;
+        margin-top: 7px;
+        margin-right: 30px;
+
+}
+
+.loginLink:hover{
+    color:#FF5E1B
+}

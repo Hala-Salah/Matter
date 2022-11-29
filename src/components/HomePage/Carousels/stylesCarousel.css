@@ -1,0 +1,96 @@
+/* next and perv colors */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #33333A;
+    margin: auto;
+}
+
+.carousel-control-prev {
+    width: 50px;
+    height: 90px;
+    border-radius: 0 150px 150px 0;
+    padding-right: 10px;
+}
+
+.carousel-control-next {
+    width: 50px;
+    height: 90px;
+    border-radius: 150px 0 0 150px;
+    padding-left: 10px;
+
+}
+
+/* Carousal Title And Button */
+.carouselsDes {
+    text-align: left;
+    margin-left: 60%;
+    margin-bottom: 15%;
+    width: 60%;
+}
+
+.sliderTitle {
+    font-size: 60px;
+    width: 80%;
+    text-align: left;
+    margin-bottom: 8%;
+    color: white;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.sliderButton {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.66;
+    font-weight: 700;
+    padding-bottom: 2%;
+    border-bottom: 2px solid white;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+
+.sliderButton:hover {
+    color: #FF5E1B;
+}
+
+
+
+@media(max-width:1100px) {
+    .carouselsDes {
+        margin-bottom: 2%;
+    }
+
+    .sliderTitle {
+        font-size: 48px;
+        margin-bottom: 2%;
+    }
+
+    .sliderButton {
+        font-size: 10px;
+        padding-bottom: 1%;
+
+    }
+
+}
+
+@media(max-width:650px) {
+    .carouselsDes {
+        margin-bottom: 0%;
+    }
+
+    .sliderTitle {
+        font-size: 20px;
+        margin-bottom: 0%;
+
+    }
+
+    .sliderButton {
+        font-size: 6px;
+        padding-bottom: 1%;
+    }
+
+}

@@ -1,0 +1,9 @@
+.navMiddleItem{
+    margin-right:40px !important ;
+}
+.nav-link{
+    color:#33333A
+}
+.nav-link:hover{
+    color: #FF5E1B;
+}

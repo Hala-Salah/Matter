@@ -1,0 +1,9 @@
+.darkNav{
+    height: 40px;
+    color: white;
+    background-color: #33333A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
