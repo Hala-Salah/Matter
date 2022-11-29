@@ -1,0 +1,16 @@
+.AboutMatterWrapper{
+    width: 80%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.RightSection{
+     max-height: 430px; 
+     margin-bottom: 15px;   
+}
+.aboutImage{
+    max-height: 430px;
+    width: 100%;
+    max-width: 555px;
+   
+} 
