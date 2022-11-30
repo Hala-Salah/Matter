@@ -31,15 +31,26 @@ const RecommendedVideos = () => {
         <Row>
           {recommendedData.map((video) => {
             return (
-              <Col xl="4" lg="4" md="4" sm ="4" key={video.id} className={styles.video}>
-                <img className={styles.videoImg} src={video.imgSrc} alt={video.title} />
+              <Col
+                xl="4"
+                lg="4"
+                md="4"
+                sm="4"
+                key={video.id}
+                className={styles.video}
+              >
+                <img
+                  className={styles.videoImg}
+                  src={video.imgSrc}
+                  alt={video.title}
+                />
                 <p>{video.title}</p>
-                <div className={styles.overlay}><BiPlayCircle className={styles.playIcon}/></div>
-                
+                <div className={styles.overlay}>
+                  <BiPlayCircle className={styles.playIcon} />
+                </div>
               </Col>
             );
           })}
-          
         </Row>
       </Container>
     </>
