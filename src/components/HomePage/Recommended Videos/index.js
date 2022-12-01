@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styles from "./styles.module.css";
 import { BiPlayCircle } from "react-icons/bi";
+import SharedButton from "../../SharedButton";
 const recommendedData = [
   {
     id: 0,
@@ -51,6 +52,11 @@ const RecommendedVideos = () => {
               </Col>
             );
           })}
+        </Row>
+        <Row>
+          <div className={styles.showMoreButton}>
+            <SharedButton buttonLabel={"Show More"} />
+          </div>
         </Row>
       </Container>
     </>

@@ -9,6 +9,7 @@
     max-width: 361px;
     max-height: 240px;
     position: relative;
+    margin-bottom: 3%;
 }
 
 .videoImg {
@@ -37,4 +38,11 @@
         font-size: 45px;
     }
 
+}
+.showMoreButton{
+  
+    width: 180px;
+    height: 40px;
+margin: auto;
+  
 }
