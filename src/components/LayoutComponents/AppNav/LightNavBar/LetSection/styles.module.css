@@ -1,5 +1,8 @@
 .matterLogo{
+    width: 100%;
+}.link{
     width: 20%;
-    max-width: 130px;
-    margin-right: 40px;
+    border :1px red solid;
+    max-width: 120px;
+    margin-right: 1%;
 }
