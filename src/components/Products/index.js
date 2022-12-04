@@ -7,7 +7,6 @@ import styles from './styles.module.css'
 
 const Products = () => {
   const productsData = useContext(ProductsContext);
-   console.log(productsData);
 
   
   if (productsData) {

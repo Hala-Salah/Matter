@@ -1,0 +1,18 @@
+.productName{
+    font-weight: 400;
+    font-size: 24px;
+}
+.PriceRating{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price{
+    font-weight: 300;
+    color: #FF6008;
+    font-size: 20px;
+}
+.hrs{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #FF5E1B, rgba(0, 0, 0, 0));
+}
