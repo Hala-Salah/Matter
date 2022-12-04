@@ -1,25 +1,20 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, {useContext} from "react";
+import {ProductsContext} from "../../App.js"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ProductCard from "./ProductCard";
 import styles from './styles.module.css'
 
 const Products = () => {
-  const url = "https://fakestoreapi.com/products?limit=8";
+  const productsData = useContext(ProductsContext);
+   console.log(productsData);
 
-  const [products, setProducts] = useState(null);
-  useEffect(() => {
-    axios.get(url).then((response) => {
-      setProducts(response.data);
-    });
-  }, [url]);
   
-  if (products) {
+  if (productsData) {
     return (
       <Container className={styles.productsWrapper}>
         <Row>
-          {products.map((productItem) => {
+          {productsData.map((productItem) => {
             return (
               <ProductCard{...productItem} key={productItem.id}/>
             );
