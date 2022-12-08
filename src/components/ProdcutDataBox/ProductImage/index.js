@@ -4,7 +4,7 @@ import styles from './styles.module.css'
 
 const ProductImage = ({image}) => {
   return (
-    <Col  >
+    <Col xl="5" lg="4" md="4" >
       <img src={image} alt=""  className={styles.ProductImage}/>
       </Col>
   )

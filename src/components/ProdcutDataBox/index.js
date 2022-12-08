@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import styles from "./styles.module.css";
 import ProductImage from "./ProductImage/index.js";
 import ProductDes from "./ProductDes/index.js";
+import Quantity from "./Quantity/index.js";
 
 const ProductData = ({ id }) => {
   const productsData = useContext(ProductsContext);
@@ -24,6 +25,7 @@ const ProductData = ({ id }) => {
             description={viewedProduct.description}
             category={viewedProduct.category}
           />
+          
         </Row>
       </Container>
     </>

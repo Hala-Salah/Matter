@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import Col from "react-bootstrap/Col";
 import MoreDetails from "./MoreDetails";
+import Quantity from "../Quantity";
 
 const ProductDes = (props) => {
   return (
@@ -15,7 +16,10 @@ const ProductDes = (props) => {
         </div>
         <MoreDetails title={"Description"} des={props.description}/>
         <MoreDetails title={"Category"} des={props.category}/>
+        <MoreDetails title={"Artisan Employment"} des={"54 jobs"}/>
+        <MoreDetails title={"Partnership"} des={"Randall Armstrong"}/>
    </div>
+   <Quantity/>
     </Col>
   );
 };

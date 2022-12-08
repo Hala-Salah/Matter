@@ -1,0 +1,29 @@
+.quantityDiv{
+    margin-top: 15px;
+
+}
+.quantityTitle{
+    font-size: 12px;
+    font-weight: 400;
+}
+.counter{
+    display: flex;
+    border: #DEDEDE 2px solid;
+    width: 120px;
+    height: 40px;
+
+}
+.addDeleteCounterButton{
+    width: 39px;
+    height: 36px;
+    border:none;
+    background-color: #F3F3F3;
+    font-size: 18px;
+}
+.numberCounter{
+    margin-top: 6px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    align-items: center;
+}
