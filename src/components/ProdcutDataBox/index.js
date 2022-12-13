@@ -6,17 +6,16 @@ import Row from "react-bootstrap/Row";
 import styles from "./styles.module.css";
 import ProductImage from "./ProductImage/index.js";
 import ProductDes from "./ProductDes/index.js";
-import Quantity from "./Quantity/index.js";
 
-const ProductData = ({ id }) => {
+const ProductData = ({ id ,  close}) => {
   const productsData = useContext(ProductsContext);
   const viewedProduct = productsData.find((IDProduct) => IDProduct.id === id);
 
   return (
     <>
-      <BoxHeader />
+      <BoxHeader productTitle={viewedProduct.title} close={close}/>
       <Container>
-        <Row>
+        <Row className={styles.body}>
           <ProductImage image={viewedProduct.image} />
 
           <ProductDes
@@ -24,6 +23,7 @@ const ProductData = ({ id }) => {
             price={viewedProduct.price}
             description={viewedProduct.description}
             category={viewedProduct.category}
+            rating={viewedProduct.rating.rate}
           />
           
         </Row>

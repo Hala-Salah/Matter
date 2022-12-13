@@ -1,5 +1,6 @@
 
 .ProductImage{
+   margin: auto;
    width: 80%;
    max-width: 260px;
 }
