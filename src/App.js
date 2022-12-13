@@ -1,6 +1,6 @@
 import "./App.css";
 import Router from "./router";
-import React, { useState, useEffect, createContext} from "react";
+import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
 export const ProductsContext = createContext(null);
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <ProductsContext.Provider value={products}>
-  
+     
       <Router />
     </ProductsContext.Provider>
   );

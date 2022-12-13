@@ -4,6 +4,7 @@ import AsSeenOn from "../components/HomePage/AsSeenOn";
 import Carousels from "../components/HomePage/Carousels";
 import Featured from "../components/HomePage/Featured";
 import RecommendedVideos from "../components/HomePage/Recommended Videos";
+import Shop from "../components/HomePage/Shop";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Carousels />
       <Featured />
       <AboutMatter />
+      <Shop/>
       <RecommendedVideos />
       <AsSeenOn />
     </>

@@ -1,0 +1,48 @@
+
+.imageDiv {
+width: 70%;
+  height: 90%;
+  padding: 3% 2%;
+  text-align: center;
+  position: relative;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.categoryName{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: white;
+}
+
+
+.categoryName h1{
+    font-size: 18px;
+    font-weight: 400;
+}
+.shopNow{
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    opacity: 0;
+}
+.shopCard:hover .cardImage{
+    opacity: 0.5;
+}
+
+.shopCard:hover .shopNow {
+    opacity: 1;
+    
+}
