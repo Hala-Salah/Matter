@@ -2,6 +2,8 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import SharedButton from "../../../SharedButton";
 import styles from "./styles.module.css";
+import { Link } from "react-router-dom";
+
 const ShopCard = (props) => {
   return (
     <>
@@ -17,8 +19,10 @@ const ShopCard = (props) => {
             <h1>{props.category}</h1>
           </div>
           <div className={styles.shopNow}>
-            <SharedButton buttonLabel={"shop now"} />
-          </div>{" "}
+            <Link to={props.category}>
+              <SharedButton buttonLabel={"shop now"} />
+            </Link>
+          </div>
         </div>
       </Col>
     </>

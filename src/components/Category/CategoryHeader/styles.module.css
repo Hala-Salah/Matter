@@ -1,0 +1,23 @@
+.CategoryHeader {
+    background-color: #F3F3F3;
+    align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+.categoryTitle {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    
+}
+
+.categoryImage {
+    max-width: 220px;
+    width: 40%;
+}
+
+.categoryImage img {
+    width: 100%;
+    
+}

@@ -21,9 +21,9 @@ const MiddleSection = () => {
         {middleSectionItem.map((item) => {
           return (
             <NavDropdown title={item.title} key={item.id}>
-              {item.title==="SHOP" ?(categoryArray.map((item)=>{
-                return (<NavDropdown.Item>{item}</NavDropdown.Item>)
-              })):"HA"}
+              {item.title==="SHOP" ?(categoryArray.map((item , index)=>{
+                return (<NavDropdown.Item key={index}>{item}</NavDropdown.Item>)
+              })):"Item"}
              
             </NavDropdown>
           );
