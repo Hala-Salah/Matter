@@ -1,10 +1,14 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import CategoryProductList from '../components/Category';
+import CategoryBody from '../components/Category/CategoryBody';
+import CategoryHeader from '../components/Category/CategoryHeader';
 const CategoryList = () => {
     const {category} = useParams();
+
   return (
-  <CategoryProductList category={category}/>
+  <><CategoryHeader categoryName={category}/>
+  <CategoryBody category={category}/></>
+
   )
 }
 

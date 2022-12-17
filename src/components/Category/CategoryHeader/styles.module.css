@@ -1,15 +1,15 @@
 .CategoryHeader {
     background-color: #F3F3F3;
     align-items: center;
-justify-content: center;
-padding: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .categoryTitle {
     text-align: center;
     font-size: 60px;
     font-weight: 400;
-    
+
 }
 
 .categoryImage {
@@ -19,5 +19,52 @@ padding: 20px;
 
 .categoryImage img {
     width: 100%;
-    
+
+}
+
+.whiteSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: honeydew 1px solid;
+}
+
+.whiteSection h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.sort {
+    display: flex;
+}
+
+.sortButton {
+    background-color: white;
+    color: #515356;
+    font-size: 14px;
+    width: 165px;
+    text-align: left;
+    height: 40px;
+    border: #DEDEDE 1px solid;
+    margin-left: 10px;
+    border-radius: 0px;
+}
+
+.sortButton:hover {
+    background-color: #FF5E1B;
+    border: none;
+}
+
+.sortButton:active {
+    background-color: #FF5E1B !important;
+    border: none !important;
+}
+
+.sortButton::after {
+
+    margin-left: 80px;
 }
