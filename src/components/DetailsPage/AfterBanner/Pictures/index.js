@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Card from 'react-bootstrap/Card';
 import styles from "./styles.module.css"
 
 const Pictures = () => {
@@ -8,17 +7,17 @@ const Pictures = () => {
     {
       id: 0,
       title: "Lorem ipsum dolor sit amet 0",
-      imgSrc: "/assets/AfterBanner/pic1.png",
+      imgSrc: "/assets/images/AfterBanner/pic1.png",
     },
     {
       id: 1,
       title: "Lorem ipsum dolor sit amet 1",
-      imgSrc: "/assets/AfterBanner/pic2.png",
+      imgSrc: "/assets/images/AfterBanner/pic2.png",
     },
     {
       id: 2,
       title: "Lorem ipsum dolor sit amet 2",
-      imgSrc: "/assets/AfterBanner/pic3.png",
+      imgSrc: "/assets/images/AfterBanner/pic3.png",
     },
   ]
   return (

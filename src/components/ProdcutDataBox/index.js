@@ -12,9 +12,10 @@ const ProductData = ({ id, close }) => {
 
   return (
     <>
-      {/* <BoxHeader productTitle={viewedProduct.title} close={close} /> */}
+      <BoxHeader productTitle={viewedProduct.title} close={close} />
       <Container>
         <Row className={styles.body}>
+
           <ProductDes
             title={viewedProduct.title}
             price={viewedProduct.price}

@@ -1,23 +1,21 @@
-import React, { useContext } from "react";
+import React , {useContext} from 'react'
 import { useParams } from "react-router-dom";
-import { ProductsContext } from "../App";
+import DetailsPage from '../components/DetailsPage';
+import {ProductsContext} from '../App'
 
-import DePage from "../components/ProductDetailsPage";
 const ProductDetails = () => {
-  const { Product } = useParams();
-  const productsData = useContext(ProductsContext);
-  if (productsData) {
-    const viewedProduct = productsData.find(
-      (IDProduct) => IDProduct.id == Product
-    );
-    return (
-      <>
-        {" "}
-    <DePage viewedProduct={viewedProduct}/>
-        
-      </>
-    );
-  }
-};
+const {Product}=useParams();
+const productsData = useContext(ProductsContext);
+const viewedProduct = productsData?.find(
+  (IDProduct) => IDProduct.id == Product
+);
+console.log(viewedProduct)
+console.log(Product)
+  return (
+    <>
+    <DetailsPage viewedProduct={viewedProduct}/>
+    </>
+  )
+}
 
-export default ProductDetails;
+export default ProductDetails

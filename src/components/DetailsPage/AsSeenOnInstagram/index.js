@@ -6,19 +6,19 @@ import styles from "./styles.module.css";
 const Data = [
   {
     id: 0,
-    imgSrc: "/assets/AsSeenOnInsta/insta1.png",
+    imgSrc: "/assets/images/AsSeenOnInsta/insta1.png",
   },
   {
     id: 1,
-    imgSrc: "/assets/AsSeenOnInsta/insta2.png",
+    imgSrc: "/assets/images/AsSeenOnInsta/insta2.png",
   },
   {
     id: 2,
-    imgSrc: "/assets/AsSeenOnInsta/insta3.png",
+    imgSrc: "/assets/images/AsSeenOnInsta/insta3.png",
   },
   {
     id: 3,
-    imgSrc: "/assets/AsSeenOnInsta/insta4.png",
+    imgSrc: "/assets/images/AsSeenOnInsta/insta4.png",
   },
 ];
 

@@ -1,7 +1,7 @@
 import React from "react";
 import TitleComponent from "../../TitleComponent";
 import TextParagraph from "../TextParagraph";
-import styles from "./style.module.css";
+import styles from "./styles.module.css";
 import Rating from "./Rating";
 
 const Customer = () => {
@@ -11,7 +11,7 @@ const Customer = () => {
         <div className={styles.title}>
           <TitleComponent title="Customer Reviews" />
         </div>
-        {/* content */}
+
         <div className={styles.firstRow}>
           <div className={styles.rateSide}>
             <Rating/>            
@@ -23,10 +23,6 @@ const Customer = () => {
             <button className={styles.review2}>write review</button>
           </div>
           </div>
-         
-
-        
-         
         </div>
         <p>Top Customers Reviews</p>
         <div className={styles.rateSide}>
@@ -51,7 +47,7 @@ const Customer = () => {
              (farsightedness) and astigmatism. "
       />
       <div className={styles.wrapper2}>
-      <button >show more reviews </button>
+      <button className={styles.showMore} >show more reviews </button>
 
       </div>
 

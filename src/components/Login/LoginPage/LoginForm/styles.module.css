@@ -2,7 +2,6 @@
     width: 85%;
     height: 7vh;
     margin-top: 10px;
-
     padding-left: 12px;
     padding-right: 2.8rem;
     border: none;
@@ -44,4 +43,9 @@
     background-color: white;
     border: #FF5E1B 1px solid;
     color: #FF5E1B;
+}
+.Error{
+    width: 85%;
+    margin-top: 10px;
+    margin-left: 35px;
 }

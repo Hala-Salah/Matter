@@ -10,9 +10,9 @@ const CategoryList = () => {
   const categories = useContext(CategoryContext);
   const ProductData = useContext(ProductsContext);
 
-  {
+  
     if (ProductData && categories) {
-      FilterItems = ProductData.filter((item) => item.category === category);
+      FilterItems = ProductData?.filter((item) => item.category === category);
     }
     const [changeCategory, setChangeCategory] = useState(category);
     const [filtered, setFiltered] = useState(FilterItems);
@@ -37,7 +37,7 @@ const CategoryList = () => {
         />
       </>
     );
-  }
+  
 };
 
 export default CategoryList;

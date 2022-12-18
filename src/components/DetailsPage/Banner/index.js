@@ -7,7 +7,7 @@ const Banner = () => {
       <div className={styles.wrapper}>
         <img
           className={styles.banner}
-          src="/assets/Banner/banner.png"
+          src="/assets/images/Banner/banner.png"
           alt="Banner"
         />
       </div>

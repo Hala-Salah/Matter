@@ -6,7 +6,8 @@ import { useCookies } from "react-cookie";
 import styles from './styles.module.css'
 
 const UserProfile = () => {
-  const [cookie] = useCookies();
+  const [cookie , setCookie] = useCookies();
+  setCookie();
   const [user, setUser] = useState({});
   useEffect(() => {
     axios
