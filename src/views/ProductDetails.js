@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ProductsContext } from "../App";
 
-import ProductDetailsPage from "../components/ProductDetailsPage";
 import DePage from "../components/ProductDetailsPage";
 const ProductDetails = () => {
   const { Product } = useParams();

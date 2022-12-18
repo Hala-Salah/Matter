@@ -3,6 +3,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ProductDes from '../ProdcutDataBox/ProductDes';
 import styles from './styles.module.css'
+import Banner from './Banner'
+import AfterBanner from './AfterBanner'
+import TextParagraph2 from './TextParagraph2'
+import AsSeenOnInstagram from './AsSeenOnInstagram'
+import Customer from './customerReviews'
+
 const DePage = (props) => {
   console.log(props.viewedProduct)
   return (
@@ -18,7 +24,14 @@ const DePage = (props) => {
        image={props.viewedProduct.image}
      />
    </Row>
- </Container></>
+ </Container>
+<Banner/>
+<AfterBanner/>
+ <TextParagraph2/>
+ <AsSeenOnInstagram/>
+ <Customer/>
+ </>
+ 
   )
 }
 
