@@ -16,13 +16,9 @@
 
 .leftSection {
     width: 200px;
-    border: 1px green solid;
 
 }
-.ca{
-    font-size: 24px;
-    font-weight: 400;
-}
+
 .category{
     background-color: white;
     text-align: left;

@@ -1,28 +1,45 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RxEyeClosed } from "react-icons/rx";
-
+import { useNavigate } from 'react-router-dom';
 import styles from "./styles.module.css";
-let array = [{ id: 0, email: "", password: "" }];
-
+import { useCookies } from 'react-cookie'
 const LoginForm = () => {
-  const [loginForm, setLoginForm] = useState(array);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const[cookie , setCookie]=useCookies();
   const [passwordShown, setPasswordShown] = useState(false);
+  const navigate = useNavigate();
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
-
+const login=()=>{
+  
+  axios.post('http://restapi.adequateshop.com/api/authaccount/login' ,{
+    email:email, password:password
+  }).then(result=>{
+    localStorage.setItem('token' , result.data.data.Token)
+    setCookie("token" , result.data.data.Token)
+    navigate('/')
+    console.log(cookie)
+  }).catch(error=>{
+    alert('Sorry ! Please Check Your Email Or Your Password ! :( ')
+    console.log(error)
+  })
+  
+}
   return (
     <>
       <div className={styles.formFiled}>
         <input
           className={styles.LoginInput}
           type="text"
-          value={loginForm.email}
-          onChange={(e) =>
-            setLoginForm({ ...LoginForm, email: e.target.value })
+          value={email}
+          onChange={e =>
+            setEmail(e.target.value)
           }
-          name=""
+          name="email"
           id="email"
           placeholder="Enter Your Email"
         />
@@ -31,11 +48,11 @@ const LoginForm = () => {
         <input
           className={styles.LoginInput}
           type={passwordShown ? "text" : "password"}
-          value={loginForm.password}
+          value={password}
           onChange={(e) =>
-            setLoginForm({ ...LoginForm, password: e.target.value })
+            setPassword( e.target.value )
           }
-          name=""
+          name="password"
           id="password"
           placeholder="Enter Your Password"
         />
@@ -44,7 +61,7 @@ const LoginForm = () => {
           {passwordShown ? <MdOutlineRemoveRedEye /> : <RxEyeClosed />}
         </button>
       </div>
-      <div className={styles.formFiled}><button className={styles.LoginButton}>Log In</button></div>
+      <div className={styles.formFiled}><button onClick={login} className={styles.LoginButton}>Log In</button></div>
       
     </>
   );

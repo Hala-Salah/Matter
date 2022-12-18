@@ -8,7 +8,7 @@ const ErrorNotFound = () => {
       <div className={styles.errorPage}>
         <img
           className={styles.errorImg}
-          src="assets/images/NotFound/ErrorNotFound.png" alt="Error Not Found ! "
+          src="/assets/images/NotFound/ErrorNotFound.png" alt="Error Not Found ! "
         />
        
       </div>
