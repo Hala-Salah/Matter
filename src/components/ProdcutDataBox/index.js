@@ -6,14 +6,15 @@ import Row from "react-bootstrap/Row";
 import styles from "./styles.module.css";
 import ProductImage from "./ProductImage/index.js";
 import ProductDes from "./ProductDes/index.js";
+import SharedButton from "../SharedButton/index.js";
 
-const ProductData = ({ id ,  close}) => {
+const ProductData = ({ id, close }) => {
   const productsData = useContext(ProductsContext);
   const viewedProduct = productsData.find((IDProduct) => IDProduct.id === id);
 
   return (
     <>
-      <BoxHeader productTitle={viewedProduct.title} close={close}/>
+      <BoxHeader productTitle={viewedProduct.title} close={close} />
       <Container>
         <Row className={styles.body}>
           <ProductImage image={viewedProduct.image} />
@@ -25,8 +26,8 @@ const ProductData = ({ id ,  close}) => {
             category={viewedProduct.category}
             rating={viewedProduct.rating.rate}
           />
-          
         </Row>
+        
       </Container>
     </>
   );

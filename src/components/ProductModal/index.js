@@ -2,6 +2,9 @@ import React from "react";
 import { useState } from "react";
 import Modal from "react-modal";
 import ProductData from "../ProdcutDataBox";
+import SharedButton from "../SharedButton";
+import { Link } from "react-router-dom";
+import styles  from './styles.module.css'
 
 const ProductModal = ({ productID }) => {
   Modal.setAppElement("#root");
@@ -18,7 +21,11 @@ const ProductModal = ({ productID }) => {
         shouldCloseOnOverlayClick={false}
       >
         <ProductData id={productID}  close={closeModal}/>
-
+        
+          <Link to={`${productID}/pro`}><div className={styles.Full}>
+            <SharedButton buttonLabel={"View Full product Details"} />
+          </div></Link>
+        
       </Modal>
     )
   );
