@@ -28,9 +28,7 @@
   position: absolute;
   left: 50%;
 }
-p {
-  color: #666666;
-}
+
 .firstRow {
   display: flex;
   justify-content: space-between;
