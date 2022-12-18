@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { ProductsContext } from "../../../App";
+import React from "react";
 import styles from "./styles.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -8,9 +7,9 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 const CategoryHeader = (props) => {
   const category = props.categoryName;
-  const ProductData = useContext(ProductsContext);
-  if (ProductData) {
-    const CategoryImage = ProductData.find(
+  const OneImage= props.ProductData;
+  if (OneImage) {
+    const CategoryImage = OneImage.find(
       (image) => image.category === category
     );
     return (

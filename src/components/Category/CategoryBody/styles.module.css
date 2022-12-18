@@ -15,7 +15,7 @@
 
 
 .leftSection {
-    width: 260px;
+    width: 200px;
     border: 1px green solid;
 
 }
@@ -23,9 +23,21 @@
     font-size: 24px;
     font-weight: 400;
 }
-.selected{
-    color:#FF5E1B;
+.category{
+    background-color: white;
+    text-align: left;
+    border: none;
+    margin-bottom: 20px;
     font-size: 24px;
-    font-weight: 400;
 }
-.rightSection {}
+.selected{
+    color: #FF5E1B;
+    background-color: white;
+    text-align: left;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.category:hover{
+    color: #FF5E1B;
+}
