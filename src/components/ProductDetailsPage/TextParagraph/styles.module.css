@@ -1,0 +1,14 @@
+
+.textWrapper {
+    width: 60%;
+    margin: auto;
+    margin-top: 16px;
+    color: rgba(102, 102, 102, 1);
+    font-family: "ProximaNova-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: justified;
+    line-height: 25px;
+  }
