@@ -8,11 +8,10 @@ import { useCookies } from "react-cookie";
 import Alert from 'react-bootstrap/Alert';
 
 const LoginForm = () => {
-  const [email, setEmail] = useState("");
+  const [form , setForm]=useState([{email:"" ,password:"" }])
   const regex =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 const [EmailError , setEmailError]=useState(false);
-const [FormError , setFormError]=useState('');
 
   const [password, setPassword] = useState("");
   const [cookie, setCookie] = useCookies();
@@ -23,13 +22,11 @@ const [FormError , setFormError]=useState('');
     
   };
   const login = () => {
-    if(email.length==0||password.length==0){
-      setFormError("EROOR")
-    }
+    
     axios
       .post("http://restapi.adequateshop.com/api/authaccount/login", {
-        email: email,
-        password: password,
+        email: form.email,
+        password: form.password,
       })
       .then((result) => {
         localStorage.setItem("token", result.data.data.Token);
@@ -37,14 +34,13 @@ const [FormError , setFormError]=useState('');
         navigate("/");
         console.log(cookie);
       })
-      .catch((error) => {
-        setFormError(true);
-        console.log(error);
-      });
+      // .catch((error) => {
+      //   console.log(error);
+      // });
   };
   const handelEmail = (e) => {
-    setEmail(e.target.value);
-    if(regex.test(email)===false){
+    setForm([...form , {email:e.target.value}]);
+    if(regex.test(form.email)===false){
       setEmailError("Please Enter Valid Email !")
     }
     else{
@@ -57,11 +53,10 @@ const [FormError , setFormError]=useState('');
       
       </div>
       <div className={styles.formFiled}>
-     
         <input
           className={styles.LoginInput}
           type="text"
-          value={email}
+          value={form.email}
           onChange={handelEmail}
           name="email"
           id="email"
@@ -71,14 +66,13 @@ const [FormError , setFormError]=useState('');
       {EmailError&&<Alert className={styles.Error} key="danger" variant="danger">
       Please enter the email correctly 
         </Alert>}
-      {/* <div className={styles.ErrorMessage}><p>{EmailError}</p></div> */}
 
       <div className={styles.formFiled}>
         <input
           className={styles.LoginInput}
           type={passwordShown ? "text" : "password"}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={form.password}
+          onChange={(e)=>setForm([...form , {password:e.target.value}])}
           name="password"
           id="password"
           placeholder="Enter Your Password"

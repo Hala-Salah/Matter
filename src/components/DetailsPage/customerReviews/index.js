@@ -26,7 +26,7 @@ const Customer = () => {
         </div>
         <p>Top Customers Reviews</p>
         <div className={styles.rateSide}>
-            <Rating/>            
+            <Rating className={styles.d}/>            
             <p className={styles.rateText}>rate of 5</p>
           </div>
           <p>By Customer Name on February 18, 2017</p>
